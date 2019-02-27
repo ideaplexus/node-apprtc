@@ -4,15 +4,15 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="WebRTC reference app">
+  <meta name="description" content="WebRTC Screen Capture Demo for Zubair">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-  <meta itemprop="description" content="Video chat using the reference WebRTC application">
+  <meta itemprop="description" content="Android screen share using the reference WebRTC application">
   <meta itemprop="image" content="/images/webrtc-icon-192x192.png">
-  <meta itemprop="name" content="AppRTC">
+  <meta itemprop="name" content="WebRTC">
   <meta name="mobile-web-app-capable" content="yes">
   <meta id="theme-color" name="theme-color" content="#ffffff">
   <base target="_blank">
-  <title>Node AppRTC</title>
+  <title>Zubair Android Screen Share Demo</title>
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" sizes="192x192" href="/images/webrtc-icon-192x192.png">
   <link rel="canonical" href="{{room_link}}">
@@ -26,7 +26,7 @@
     <video id="local-video" autoplay playsinline muted></video>
   </div>
   <div id="room-selection" class="hidden">
-    <h1>Node AppRTC</h1>
+    <h1>Zubair Android Screen Share Demo- by Akash</h1>
     <p id="instructions">Please enter a room name.</p>
     <div>
       <div id="room-id-input-div">
@@ -35,7 +35,6 @@
       </div>
       <div id="room-id-input-buttons">
         <button id="join-button">JOIN</button>
-        <button id="random-button">RANDOM</button>
       </div>
     </div>
     <div id="recent-rooms">
@@ -51,7 +50,6 @@
     <div id="sharing-div">
       <div id="room-link">Waiting for someone to join this room: <a id="room-link-href" href="{{room_link}}" target="_blank">{{room_link}}</a></div>
     </div>
-    <div id="info-div">Code for Node AppRTC is available from <a href="http://github.com/webrtc/apprtc" title="GitHub repo for AppRTC">github.com/webrtc/apprtc</a></div>
     <div id="status-div"></div>
     <div id="rejoin-div" class="hidden"><span>You have left the call.</span> <button id="rejoin-button">REJOIN</button><button id="new-room-button">NEW ROOM</button></div>
   </footer>
