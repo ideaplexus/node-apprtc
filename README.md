@@ -1,16 +1,19 @@
-# node-apprtc
+# WebRTC Screen Share, Nodejs backend based on AppRTC
 Nodejs based AppRTC server
 
-## About
-node-apprtc is a port of AppRTC from the Google WebRTC Demo to run entirely in the nodejs environment
+## Config
 
-## Demo
-See the demo [here](https://demo-node-apprtc.herokuapp.com)
+Update the url where this server will be hosted at in the config/index.js TURN_BASE_URL variable.
+
+Also update the new URL in the android app acompanying this either within the app or in the source code.
 
 ## Setup
+For heroku simply either push the directry to a heroku app or link it with a github repo & heroku will automatcially take care of SSL as well.
+
+For manual SSL/nginx based SSL you'll have to configure the node app or nginx conf accordingly. Free SSL certs from "Let's Encrypt" tool.
+
+cd into directory & run the below
 ```
-$ git clone https://github.com/MidEndProject/node-apprtc
-$ cd node-apprtc
 $ npm install
 ```
 
@@ -21,9 +24,10 @@ $ node index.js
 
 Open your browser and navigate to http://localhost:4567
 
-##To Do
-- [ ] Implementing memcached or redis options
-- [ ] Adding built-in websocket server
 
 ## License
 MIT
+
+## Author 
+
+Akash Paul
