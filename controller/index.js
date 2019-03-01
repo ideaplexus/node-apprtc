@@ -22,12 +22,12 @@ exports.turn = {
 
         "iceServers": [
           {
-            "username": "shobured@gmail.com"
-          }, { "credential": "turn" },
-          { "urls": "turn:numb.viagenie.ca" }
+            "username": "shobured@gmail.com",
+            "credential": "turn",
+            "urls": [{ "turn:numb.viagenie.ca"}]
 
-        ]
-
-      }));
+          }]
+      }
+    ));
   }
 };
