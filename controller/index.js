@@ -20,14 +20,16 @@ exports.turn = {
     reply({
         
       "iceServers": [
-        {
-          "urls": "stun:global.stun.twilio.com:3478?transport=udp"
-        },
+        { 'urls': 'stun:stun.l.google.com:19302' },
+        
         {
           "username": "shobured@gmail.com",
           "credential": "turn",
           "urls": "turn:numb.viagenie.ca"
-        }
+        },
+			{ 'urls': 'stun:stun.sipnet.net:3478' },
+			{ 'urls': 'stun:stun.ideasip.com:3478' },
+			{ 'urls': 'stun:stun.iptel.org:3478' }
       ]
       });
   }
