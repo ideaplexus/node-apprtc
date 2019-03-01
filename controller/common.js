@@ -213,6 +213,7 @@ exports.getRoomParameters = function (request, roomId, clientId, isInitiator) {
     'media_constraints': JSON.stringify(mediaConstraints),
     'turn_url': turnUrl,
     'ice_server_url':turnUrl,
+    'iceServerRequestUrl':turnUrl,
     'turn_transports': turnTransports,
     'include_loopback_js' : includeLoopbackJS,
     'wss_url': wssUrl,
