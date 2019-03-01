@@ -15,7 +15,11 @@ var getHdDefault = function (userAgent) {
 
 var makePcConfig = function (iceTransports) {
   var pcConfig = {
-    iceServers: [],
+    iceServers: [{
+				'urls': 'turn:numb.viagenie.ca',
+				'credential': 'turn',
+				'username': 'shobured@gmail.com'
+			}],
     bundlePolicy: 'max-bundle',
     rtcpMuxPolicy: 'require'
   };
