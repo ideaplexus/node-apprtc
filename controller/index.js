@@ -17,7 +17,7 @@ exports.turn = {
       path: '/__rtcConfig__',
       method: 'GET'
     };
-    reply(
+    reply(JSON.stringify(
       {
 
         "iceServers": [
@@ -28,6 +28,6 @@ exports.turn = {
           }
         ]
 
-      });
+      }));
   }
 };
