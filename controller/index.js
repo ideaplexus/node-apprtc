@@ -17,19 +17,7 @@ exports.turn = {
       path: '/__rtcConfig__',
       method: 'GET'
     };
-    Https.get(getOptions, function (result) {
-      console.log(result.statusCode == 200);
-
-      var body = '';
-
-      result.on('data', function (data) {
-        body += data;
-      });
-      result.on('end', function () {
-        reply(body);
-      });
-    }).on('error', function (e) {
-      reply({
+    reply({
         "username":"shobured@gmail.com",
         "password":"turn",
         "uris":[
@@ -42,6 +30,5 @@ exports.turn = {
           "turn:numb.viagenie.ca"
         ]
       });
-    });
   }
 };
