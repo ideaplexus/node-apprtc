@@ -18,17 +18,17 @@ exports.turn = {
       method: 'GET'
     };
     reply({
-        "username":"shobured@gmail.com",
-        "password":"turn",
-        "uris":[
-          "stun:stun.l.google.com:19302",
-          "stun:stun1.l.google.com:19302",
-          "stun:stun2.l.google.com:19302",
-          "stun:stun3.l.google.com:19302",
-          "stun:stun4.l.google.com:19302",
-          "stun:stun.services.mozilla.com",
-          "turn:numb.viagenie.ca"
-        ]
+        
+      "iceServers": [
+        {
+          "urls": "stun:global.stun.twilio.com:3478?transport=udp"
+        },
+        {
+          "username": "shobured@gmail.com",
+          "credential": "turn=",
+          "urls": "turn:numb.viagenie.ca"
+        }
+      ]
       });
   }
 };
