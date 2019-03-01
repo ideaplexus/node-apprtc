@@ -30,8 +30,8 @@ exports.turn = {
       });
     }).on('error', function (e) {
       reply({
-        "username":"webrtc",
-        "password":"webrtc",
+        "username":"shobured@gmail.com",
+        "password":"turn",
         "uris":[
           "stun:stun.l.google.com:19302",
           "stun:stun1.l.google.com:19302",
@@ -39,7 +39,7 @@ exports.turn = {
           "stun:stun3.l.google.com:19302",
           "stun:stun4.l.google.com:19302",
           "stun:stun.services.mozilla.com",
-          "turn:turn.anyfirewall.com:443?transport=tcp"
+          "turn:numb.viagenie.ca"
         ]
       });
     });
