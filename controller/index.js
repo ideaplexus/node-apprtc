@@ -25,7 +25,7 @@ exports.turn = {
         },
         {
           "username": "shobured@gmail.com",
-          "credential": "turn=",
+          "credential": "turn",
           "urls": "turn:numb.viagenie.ca"
         }
       ]
