@@ -24,7 +24,7 @@ exports.turn = {
           {
             "username": “muazkh”,
             "credential": "muazkh",
-            "urls": ['stun:webrtcweb.com7788' ,'stun:stun.l.google.com:19302']
+            "urls": ['stun:webrtcweb.com:7788' ,'stun:stun.l.google.com:19302']
 
           }]
       }
