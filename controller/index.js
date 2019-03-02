@@ -20,11 +20,11 @@ exports.turn = {
     reply(JSON.stringify(
       {
 
-        "iceServers": [
+       "iceServers": [
           {
-            "username": "shobured@gmail.com",
-            "credential": "turn",
-            "urls": ["turn:numb.viagenie.ca"]
+            "username": “muazkh”,
+            "credential": "muazkh",
+            "urls": ['stun:webrtcweb.com7788' ,'stun:stun.l.google.com:19302']
 
           }]
       }
